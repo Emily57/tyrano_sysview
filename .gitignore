@@ -1,0 +1,7 @@
+# 大事な情報が含まれていることが多いので、studio_config.json は必ず除外する
+studio_config.json
+.DS_Store
+data/fgimage/.DS_Store
+data/image/.DS_Store
+data/bgimage/.DS_Store
+data/fgimage/chara/.DS_Store
