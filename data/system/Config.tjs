@@ -18,7 +18,7 @@
 // ◆ タイトル
 // ウィンドウのキャプション(タイトル)および
 // ブラウザの場合は、タイトルに指定されます
-;System.title = tyrano_null_game_template
+;System.title = tyrano_sysview
 
 
 
