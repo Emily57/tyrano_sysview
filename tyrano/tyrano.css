@@ -326,15 +326,7 @@ body {
   padding-left: 3px;
 }
 
-/*テキストボックスの共通スタイル*/
-.text_box {
-}
-
 .tyrano_base {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-
   -webkit-text-size-adjust: none;
 
   /*  
@@ -409,7 +401,6 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic,
     "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
     Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
