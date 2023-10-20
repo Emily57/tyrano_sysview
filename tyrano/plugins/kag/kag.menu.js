@@ -117,6 +117,16 @@ tyrano.plugin.kag.menu = {
       }
     );
   },
+  // original_systemに必要な displayOriginalSystem を定義
+  // 大半は displaySave の流用なので、要修正
+  displayOriginalSystem: function (cb) {
+    var that = this;
+    this.kag.stat.is_skip = !1;
+    this.kag.html("original_system", { novel: $.novel }, function (html_str) {
+      var j_save = $(html_str);
+      that.setMenu(j_save, cb);
+    });
+  },
   doSave: function (num, cb) {
     var array_save = this.getSaveData(),
       data = {},

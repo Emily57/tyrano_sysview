@@ -1,0 +1,60 @@
+<style>
+  .highlight {
+    background-color: #f9ebca;
+    padding: 5px;
+  }
+</style>
+<div
+  style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data/bgimage/black.png');
+    z-index: -1;
+    opacity: 0.8;
+  "
+></div>
+<div
+  style="
+    background-image: url('data/bgimage/white.png');
+    width: 800px;
+    height: 400px;
+  "
+>
+  <div class="menu_item" style="float: right; margin: 20px 10px 0 0">
+    <a class="menu_close" style="cursor: pointer">閉じる</a>
+  </div>
+
+  <div style="text-align: left; margin: 20px">
+    <h1 style="font-size: 24px; margin-bottom: 10px">カスタマイズファイル</h1>
+    <p style="font-size: 16px; margin-bottom: 10px">
+      これは、自分で追加実装した original_system です。<br />
+      <span class="highlight">[sysview]</span
+      >を使えばセーブなどで読み込むHTMLを切り替えできますが、<br />
+      <span class="highlight">tyrano.plugin.kag.menu</span> と
+      <span class="highlight">[sysview]</span>
+      を組み合わせれば、存在しない全く新しい機能も作れます。<br />
+      例えば、インフォメーションの表示などに便利かもしれません。<br />
+      詳しくは以下のファイルのコードをチェックしてください。<br />
+    </p>
+    <p style="font-size: 16px; margin-bottom: 10px">
+      <span class="highlight"
+        >data/others/plugin/original_system/index.html</span
+      ><br />
+      → 今見ている画面を作ってるHTML<br />
+      <span class="highlight">tyrano/plugins/kag/kag.menu.js</span><br />
+      → <span class="highlight">displayOriginalSystem</span> を定義。<br />
+      → 関数名はなんでもいいけど、display +
+      <span class="highlight">[sysview]</span>
+      で使う名前をキャメルケースにした名前が無難でしょう。<br />
+      <span class="highlight">tyrano/plugins/kag/kag.tag.js</span><br />
+      → <span class="highlight">original_system</span> で
+      <span class="highlight">displayOriginalSystem</span>
+      を呼び出すよう定義<br />
+    </p>
+  </div>
+
+  <script class="menu_close"></script>
+</div>

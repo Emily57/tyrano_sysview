@@ -1621,6 +1621,11 @@ tyrano.plugin.kag.tag.button = {
             case "save":
               that.kag.menu.displaySave();
               break;
+            // tyrano/plugins/kag/kag.menu.js で定義した
+            // displayOriginalSystem を使う
+            case "original_system":
+              that.kag.menu.displayOriginalSystem();
+              break;
             case "load":
               that.kag.menu.displayLoad();
               break;

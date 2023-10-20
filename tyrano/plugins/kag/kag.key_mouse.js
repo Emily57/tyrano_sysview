@@ -239,6 +239,10 @@ tyrano.plugin.kag.key_mouse = {
         "none" == $(".layer_menu").css("display") &&
           this.kag.menu.displaySave();
         break;
+      // case "original_system":
+      //   "none" == $(".layer_menu").css("display") &&
+      //     this.kag.menu.displayOriginalSystem();
+      //   break;
       case "load":
         "none" == $(".layer_menu").css("display") &&
           this.kag.menu.displayLoad();
